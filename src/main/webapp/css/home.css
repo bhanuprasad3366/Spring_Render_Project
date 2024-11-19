@@ -1,0 +1,338 @@
+@charset "UTF-8";
+
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    font-weight: bold;
+}
+
+/* Header */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1e3c72;
+    color: white;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.main-header .logo h1 {
+    font-size: 1.8rem;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    margin: 0;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #345995;
+    border-radius: 5px;
+}
+
+.btn {
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+}
+
+.login-btn {
+    background-color: #00bcd4;
+    color: white;
+}
+
+.register-btn {
+    background-color: #f8b400;
+    color: white;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://source.unsplash.com/1920x1080/?campus,students') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.hero-btn {
+    background-color: #00bcd4;
+    color: white;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 25px;
+    transition: transform 0.3s;
+}
+
+.hero-btn:hover {
+    transform: scale(1.1);
+}
+
+/* Features Section */
+.features-section {
+    padding: 3rem 1rem;
+    text-align: center;
+    background-color: #fff;
+}
+
+.features-section h2 {
+    margin-bottom: 2rem;
+}
+
+.features-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.feature-item {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 2rem;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.feature-item h3 {
+    margin-bottom: 1rem;
+}
+
+/* About Section */
+.about-section {
+    padding: 3rem 1rem;
+    background-color: #e8eaf6;
+    text-align: center;
+}
+
+.about-section h2 {
+    margin-bottom: 1rem;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 3rem 1rem;
+    text-align: center;
+    background-color: #d1c4e9;
+}
+
+.contact-section h2 {
+    margin-bottom: 1rem;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #1e3c72;
+    color: white;
+}
+
+/* Registration Section */
+.register-section {
+    padding: 3rem 1rem;
+    background-color: #e8eaf6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+
+.form-container {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 1.5rem;
+    color: #1e3c72;
+}
+
+p {
+    margin-bottom: 1.5rem;
+    color: #555;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+input, select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.gender-options {
+    display: flex;
+    justify-content: space-between;
+}
+
+.gender-options label {
+    font-weight: normal;
+}
+
+.submit-btn {
+    background-color: #1e3c72;
+    color: white;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #345995;
+    transform: scale(1.05);
+}
+
+/* Login Section */
+.login-section {
+    padding: 3rem 1rem;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+
+.form-container {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 1.5rem;
+    color: #1e3c72;
+}
+
+p {
+    margin-bottom: 1.5rem;
+    color: #555;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.remember-me label {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.submit-btn {
+    background-color: #1e3c72;
+    color: white;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #345995;
+    transform: scale(1.05);
+}
+
+.register-link {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.register-link a {
+    color: #1e3c72;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+
